@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
-import Header from '../components/layout/Header'
-import UserCard from '../components/common/UserCard'
-import { UserProps } from '../interfaces'
+import Header from '@/components/layout/Header'
+import UserCard from "@/components/common/UserCard"
+import { type UserProps } from '../interfaces'
 
 export default function UsersPage() {
   const [users, setUsers] = useState<UserProps[]>([])
